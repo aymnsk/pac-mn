@@ -92,5 +92,3 @@ cmake --build .
 * Built completely on **Zorin OS**, using **CMake**, **C++**, **SDL2**, and **EnTT**.
 
 ---
-
-Just say **“yes”**.
