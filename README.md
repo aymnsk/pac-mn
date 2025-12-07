@@ -1,62 +1,96 @@
-# EnTT Pacman
+---
+
+# **Pacmn – A C++ EnTT + SDL2 Pac-Man Clone**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-An example of how to use the ECS part of the [EnTT Framework](https://github.com/skypjack/entt)
+A lightweight Pac-Man style game built in **C++**, using the **EnTT ECS framework** and **SDL2**.
+Developed and tested on **Zorin OS (Linux)**.
 
 ![Screenshot](https://i.imgur.com/J5RDcIz.png)
 
-## What is this?
+---
 
-This is a tutorial on how to use the EnTT framework to make a game. This project
-is for people who are just starting out with EnTT and not too sure how use it.
+## **About This Project**
 
-The code isn't perfect. It could certainly be improved in some areas. Any kind
-of feedback is welcome. Be sure to ask me questions if something is unclear.
-[The EnTT Gitter channel](https://gitter.im/skypjack/entt) is a great place for
-discussion.
+I created **Pacmn** to understand how game logic works internally and to prepare myself for future **AI/ML-based game projects**.
+The project helped me learn:
 
-## Installing SDL2
+* How **Entity-Component-System (ECS)** architecture works using EnTT
+* How to structure a full game loop
+* How to manage rendering, movement logic, and collision systems
+* How to work with SDL2 on Linux
 
-This uses the [SDL2 Library](https://www.libsdl.org/) for input and rendering.
-CMake will find it if it's on your system. For details on how to install SDL2,
-see the [installation page](https://wiki.libsdl.org/Installation).
+This is my personal version of Pac-Man — not an exact remake — built from scratch for learning and experimentation.
 
-If you're on MacOS,
+---
 
+## **My Profiles**
+
+🔗 **LinkedIn:** [https://www.linkedin.com/in/ayman-shaikh-53306b206](https://www.linkedin.com/in/ayman-shaikh-53306b206)
+🔗 **GitHub:** [https://github.com/aymnsk](https://github.com/aymnsk)
+
+---
+
+## **How to Install & Run on Your PC**
+
+### **1. Install SDL2**
+
+#### Linux (Ubuntu / Zorin / Debian)
+
+```bash
+sudo apt update
+sudo apt install libsdl2-dev
 ```
+
+#### MacOS
+
+```bash
 brew install sdl2
 ```
 
-If you're on a Debian based system,
+#### Windows (vcpkg)
 
-```
-sudo apt-get install libsdl2-dev
-```
-
-If you're on Windows,
-
-```
+```bash
 vcpkg install sdl2
 ```
 
-## Building
+---
 
-[EnTT](https://github.com/skypjack/entt) is bundled with the project to make
-building this as easy as possible.
+### **2. Clone the Repository**
 
+```bash
+git clone https://github.com/aymnsk/pacmn.git
+cd pacmn
 ```
-git clone https://github.com/indianakernick/EnTT-Pacman.git
-cd EnTT-Pacman/build
+
+---
+
+### **3. Build the Game**
+
+```bash
+mkdir build
+cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 cmake --build .
-./pacman
 ```
 
-## It's not exactly the same as the real thing
+---
 
-I read [The Pacman Dossier](http://tralvex.com/download/forum/The%20Pac-Man%20Dossier.pdf)
-many times during development. If you notice a difference between this game and
-the real thing, that wasn't an oversight. Perfectly recreating the real thing
-would have made this project quite a bit more complicated. I think it's
-complicated enough as it is!
+### **4. Run the Game**
+
+```bash
+./pacmn
+```
+
+---
+
+## **Notes**
+
+* This is my own custom version, simplified intentionally to understand ECS logic.
+* The gameplay logic is inspired by the Pac-Man Dossier, but not identical.
+* Built completely on **Zorin OS**, using **CMake**, **C++**, **SDL2**, and **EnTT**.
+
+---
+
+Just say **“yes”**.
